@@ -21,7 +21,7 @@ let intentos = 6;
 const button = document.getElementById("guess-button");
 
 button.addEventListener("click", intentar);
-//addEventListener("keydown", intentar);
+addEventListener("keydown.enter", intentar);
 
 
 function intentar (){
@@ -30,8 +30,15 @@ function intentar (){
         const INTENTO = leerIntento();
         const ROW = document.createElement('div');
         ROW.className = 'row';
+        new Number (value);
 
-        if (INTENTO.length != 5){
+
+        if (INTENTO === "value") {
+            alert("Debe ingresar una palabra de 5 letras");
+            return
+        }
+
+        if (INTENTO.length != 5 ) {
             alert("Debe ingresar una palabra de 5 letras");
             return
         }
