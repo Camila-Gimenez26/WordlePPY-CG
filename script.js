@@ -30,13 +30,7 @@ function intentar (){
         const INTENTO = leerIntento();
         const ROW = document.createElement('div');
         ROW.className = 'row';
-        new Number (value);
-
-
-        if (INTENTO === "value") {
-            alert("Debe ingresar una palabra de 5 letras");
-            return
-        }
+        
 
         if (INTENTO.length != 5 ) {
             alert("Debe ingresar una palabra de 5 letras");
